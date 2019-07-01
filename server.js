@@ -50,6 +50,10 @@ app.get('/stopserver', function (req, res) {
   res.send('hello for stopserver')
 })
 
+app.get('/', function (req, res) {
+  res.send('Server side running')
+})
+
 app.get('/dialogflow', async (req, res) => 
 {
   console.log('return response before res.send');
