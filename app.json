@@ -1,0 +1,21 @@
+{
+    "name": "Hexagon chatbot server",
+    "description": "Server code for Hexagon chatbot.",
+    "keywords": [
+      "node",
+      "express",
+      "static"
+    ],
+    "repository": "https://github.com/hrhexagonbot/hrHexagonbot_server",
+    "success_url": "/",
+    "scripts": {
+      "postdeploy": "bundle exec rake bootstrap"
+    },
+    "environments": {
+      "test": {
+        "scripts": {
+          "test": "bundle exec rake test"
+        }
+      }
+    }
+  }
